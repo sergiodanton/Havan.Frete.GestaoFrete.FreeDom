@@ -1,0 +1,14 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "jest.autoRun": {
+    "watch": false,
+    "onStartup": ["all-tests"],
+    "onSave": "test-src-file"
+  },
+  "jest.jestCommandLine": "\"./node_modules/.bin/jest --config jest.config.cjs\"",
+  "stylelint.validate": ["css", "scss", "jsx", "js", "ts", "tsx"]
+}

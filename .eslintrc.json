@@ -1,0 +1,20 @@
+{
+  "extends": ["@freedom"],
+  "overrides": [
+    {
+      "files": ["*.{ts,tsx}"],
+      "extends": ["@freedom/typescript"],
+      "parserOptions": {
+        "project": ["./tsconfig.json"]
+      },
+      "overrides": [
+        {
+          "files": ["vite.config.ts"],
+          "parserOptions": {
+            "project": ["./tsconfig.node.json"]
+          }
+        }
+      ]
+    }
+  ]
+}
